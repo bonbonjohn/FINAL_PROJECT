@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Quick Listicle of Things to Do in Cebu City</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+        }
+        h1 {
+            color: #333;
+            text-align: left;
+            margin-top: 20px;
+        }
+        p {
+            color: #555;
+        }
+        .listicle-item {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            width: 100%;
+            text-align: left;
+        }
+        .listicle-item:last-child {
+            border-bottom: none;
+        }
+        .listicle-item h2 {
+            color: #333;
+            margin-top: 0;
+        }
+        .image-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .single-image-container {
+            margin-bottom: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .single-image-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .date {
+            color: #777;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            width: 30%;
+            padding: 20px 0;
+            box-sizing: border-box;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        .sidebar h2 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        .subscribe-box {
+            background-color: #f0f0f0;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .subscribe-box h3 {
+            font-size: 1em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .subscribe-box button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .subscribe-box button:hover {
+            background-color: #0056b3;
+        }
+
+        .recent-posts h3 {
+            font-size: 1em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .main-content {
+            width: 60%;
+            padding-left: 20px;
+            box-sizing: border-box;
+        }
+        .header-image{
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* Fixed Chatbot Button Styles */
+        .chatbot-button-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000; /* Ensure it stays on top of other elements */
+        }
+
+        .chatbot-button {
+            background-color: #007bff; /* Example button color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .chatbot-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="subscribe-box">
+            <h3>Listicle  </h3>
+            <p>Historical heart and modern hub of the Southern Philippines. Explore culture, beaches, and vibrant city life.</p>
+            <button>Subscribe</button>
+        </div>
+        <div class="recent-posts">
+            <h3>Recent Posts</h3>
+            <ul>
+                <li><a href="#">A Quick Listicle of Things to Do</a></li>
+            </ul>
+        </div>
+        <div class="about-section">
+             <h3>About</h3>
+             <p>Cebu, the "Queen City of the South," offers incredible experiences! Explore historical sites, dive into turquoise waters...</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>A Quick Listicle of Things to Do</h1>
+        <img class="header-image" src="./pics/shibu.png" alt="Cebu City">
+        <p>Cebu City, the “Queen City of the South” in the Philippines, is a vibrant hub blending historical charm with modern energy. Explore centuries-old landmarks, pristine beaches, and bustling markets. Dive into rich culture, savor delicious local cuisine (especially the famous Lechon!), and experience warm Filipino hospitality. Whether you’re seeking adventure in nature or a taste of urban life, Cebu offers a diverse and captivating experience.</p>
+
+        <div class="listicle-item">
+            <h2>1. Step Back in Time</h2>
+            <div class="image-container">
+                <img src="./pics/cebu.png" alt="Pic1" style="max-width: 100%;">
+            </div>
+            <p>Visit historical landmarks like <a href="#">Magellan’s Cross</a> and the <a href="#">Basilica del Santo Niño</a>, the oldest church in the Philippines. Explore <a href="#">Fort San Pedro</a>, a triangular bastion fort with centuries of history.</p>
+        </div>
+
+        <div class="listicle-item">
+            <h2>2. Immerse in Culture</h2>
+            <div class="image-container">
+                <img src="./pics/loc1.png" alt="Pic2" style="max-width: 100%;">
+            </div>
+            <p>Wander through the <a href="#">Heritage of Cebu Monument</a> showcasing key historical events. Explore the well-preserved <a href="#">Yap-Sandiego Ancestral House</a> for a glimpse into the past. Discover the spiritual ambiance of the <a href="#">Cebu Taoist Temple</a> with its panoramic city views.</p>
+        </div>
+
+        <div class="listicle-item">
+            <h2>3. Chase Waterfalls</h2>
+            <div class="image-container">
+                <img src="./pics/falls.png" alt="Waterfall 1" style="max-width: 100%;">
+            </div>
+            <p>Discover the pristine white-sand beaches and vibrant marine life of nearby islands like <a href="#">Malapascua</a> (famous for thresher sharks), <a href="#">Bantayan Island</a>, and <a href="#">Sumilon Island</a> with its stunning sandbar.</p>
+        </div>
+
+        <div class="listicle-item">
+            <h2>4. Island Hop</h2>
+            <div class="image-container">
+                <img src="./pics/dadat.png" alt="Island 1" style="max-width: 100%;">
+            </div>
+            <p>Discover the pristine white-sand beaches and vibrant marine life of nearby islands like <a href="#">Malapascua</a> (famous for thresher sharks), <a href="#">Bantayan Island</a>, and <a href="#">Sumilon Island</a> with its stunning sandbar.</p>
+        </div>
+
+        <div class="listicle-item">
+            <h2>5. Dive and Snorkel</h2>
+            <div class="image-container">
+                <img src="./pics/dadat2.png" alt="Mactan Island" style="max-width: 100%;">
+            </div>
+            <p>Cebu is a renowned diving destination. Explore the diverse underwater world around <a href="#">Mactan Island</a>, <a href="#">Moalboal</a> (famous for the sardine run and sea turtles), and <a href="#">Malapascua</a>.</p>
+        </div>
+
+        <div class="listicle-item">
+            <h2>6. Enjoy the Views</h2>
+            <div class="single-image-container">
+                <img src="./pics/tops.png" alt="Tops Lookout" style="max-width: 100%;">
+            </div>
+            <p>Head to <a href="#">Tops Lookout</a> for breathtaking panoramic views of Cebu City and Mactan Island, especially beautiful at sunset.</p>
+        </div>
+
+        <div class="listicle-item">
+            <h2>7. Go on an Adventure</h2>
+            <div class="single-image-container">
+                <img src="./pics/bukid.png" alt="Osmeña Peak" style="max-width: 100%;">
+            </div>
+            <p>Hike up to <a href="#">Osmeña Peak</a>, the highest point in Cebu, for stunning mountain views.</p>
+        </div>
+
+        <div class="listicle-item">
+            <h2>8. Experience City Life</h2>
+            <div class="image-container">
+                <img src="./pics/mall.png" alt="Carbon Market" style="max-width: 100%;">
+            </div>
+            <p>Explore the bustling <a href="#">Carbon Market</a> for a local experience or enjoy shopping and dining at modern malls like <a href="#">Ayala Center Cebu</a> and <a href="#">SM Seaside City Cebu</a>.</p>
+        </div>
+
+        <div class="listicle-item">
+            <h2>9. Encounter Wildlife</h2>
+            <div class="image-container">
+                <img src="./pics/oslob.png" alt="Whale Sharks in Oslob" style="max-width: 100%;">
+            </div>
+            <p>Swim with gentle giant <a href="#">whale sharks in Oslob</a> (though ethical concerns exist, so research responsible tour operators). Visit the <a href="#">Jumalon Butterfly Sanctuary & Art Gallery</a>.</p>
+        </div>
+
+        <div class="listicle-item">
+            <h2>10. Savor Local Flavors</h2>
+            <div class="single-image-container">
+                <img src="./pics/lechon.png" alt="Cebu Lechon and other delicacies" style="max-width: 100%;">
+            </div>
+            <p>Don’t miss trying Cebu’s famous <a href="#">Lechon</a> (roasted pig) and other local delicacies.</p>
+        </div>
+    </div>
+
+    <div class="chatbot-button-container">
+        <button id="chatbot-toggle" class="chatbot-button"></button>
+    </div>
+
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js";
+
+        const chatbotButton = document.getElementById('chatbot-toggle');
+        let chatbotInstance = null;
+
+        chatbotButton.addEventListener('click', () => {
+            if (!chatbotInstance) {
+                chatbotInstance = Chatbot.init({
+                    chatflowid: "99782c8d-47dd-48f5-85d5-102d1f88fb2c",
+                    apiHost: "https://itsmechel-projects.hf.space",
+                });
+            } else {
+                // You might want to add logic here to show/hide the chatbot UI
+                // depending on how Flowise Embed handles visibility.
+                // For example, if it creates a modal, you might need to find and toggle its display.
+                console.log("Chatbot already initialized.");
+            }
+        });
+    </script>
+
+</body>
+</html>
